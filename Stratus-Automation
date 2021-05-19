@@ -1,0 +1,12 @@
+# Overview
+Automation Framework expose different Apis which can be called by different QA teams as simple http rest requests.
+For authentication mechanism to generate access tokens QA teams send request to automation framework and framework internally connects with other systems to generate access token and delivered back to QA teams. They will use this as bearer token in the test scripts.
+In order to test different third party systems QA teams has to generate payloads. Automation framework provides the support by generating different payloads based on different scenarios and requirements. Also provide support for customized payloads.
+Testrail is a tool used to view the test execution results. QA teams use automation framework to push the results. In this way the complexity for connecting with Testrail and invoking Testrail api lies within framework and hidden from QA scripts.
+Also QA teams has to validate the api response against Swagger Doc. This also is handled from framework side.
+
+# Tropos
+Automation Framework is deployed in Tropos in dev and pie stack
+
+* https://stratus-dev.tropos-rnd.com/v1/stratusafw
+* https://stratus-pie.tropos-rnd.com/v1/stratusafw
